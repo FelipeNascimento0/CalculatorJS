@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style_calc.css">
+</head>
+<body>
+    <div class="main_website">
+        <label>
+                <a href="https://www.youtube.com/watch?v=az6OYFS7AUA" target="_blank" class="main_elements">Adição</a>
+                <a href="https://www.youtube.com/watch?v=oSzh7TjIsjs" target="_blank" class="main_elements">Subtração</a>
+                <a href="https://www.youtube.com/watch?v=BetgRvNQEC0" target="blank" class="main_elements">Multiplicação</a>
+                <a href="https://www.youtube.com/watch?v=GpnfZHB3Rpw" target="blank" class="main_elements">Divisão</a>
+        </label>
+    </div>
+    <div class="box_external">
+        <div class="box_internal">
+            <div class="table_buttons">
+               <p id="res"></p>
+                <div class="buttons_number">
+                    <button class="normal" id="seven_num" onclick="insert('7')">7</button>
+                    <button class="normal" id="eight_num" onclick="insert('8')">8</button>
+                    <button class="normal" id="nine_num" onclick="insert('9')">9</button>
+                    <br>
+                    <button class="normal" id="four_num" onclick="insert('4')">4</button>
+                    <button class="normal" id="five_num" onclick="insert('5')">5</button>
+                    <button class="normal" id="six_num" onclick="insert('6')">6</button>
+                    <br>
+                    <button class="normal" id="one_num" onclick="insert('1')">1</button>
+                    <button class="normal" id="two_num" onclick="insert('2')">2</button>
+                    <button class="normal" id="three_num" onclick="insert('3')">3</button>
+                    <br>
+                    <button class="button_zero" id="zero_num" onclick="insert('0')">0</button>
+                    <button class="point" id="point_num" onclick="insert('.')">.</button>
+                </div>
+                <div class="operators">
+                    <button class="normal">CE</button>
+                    <button class="normal" onclick="clean()">C</button>
+                    <br>
+                    <button class="normal"  onclick="insert('/')">/</button>
+                    <button class="normal" onclick="insert('*')">*</button>
+                    <br>
+                    <button class="button_less" onclick="insert('-')">-</button>
+                    <button class="button_more" onclick="insert('+')">+</button>
+                    <br>
+                    <button class="button_res" id="res_num" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>@Felipe_Nascimento</footer>
+    <script src="script_calc.js"></script>
+
+    
+</body>
+</html>
